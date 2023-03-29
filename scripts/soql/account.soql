@@ -1,0 +1,7 @@
+// Use .soql files to store SOQL queries.
+// You can execute queries in VS Code by selecting the
+//     query text and running the command:
+//     SFDX: Execute SOQL Query with Currently Selected Text
+
+SELECT Education_Requirement__c, Hiring_Manager__c, Job_Description__c, Job_Qualifications__c, MayEdit, OwnerId, Recruiting_Specialist__c, Responsibilities__c, Id
+FROM Job_Posting__c

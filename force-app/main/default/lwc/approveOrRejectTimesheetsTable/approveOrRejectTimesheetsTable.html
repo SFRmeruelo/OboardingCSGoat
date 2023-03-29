@@ -1,0 +1,28 @@
+<template>
+        <c-modal button-label = "Approve or Reject Timesheets" title ={title}>
+                <lightning-datatable columns={columns}
+                                        data={timesheets}
+                                        onrowselection={handleSelectedRows}
+                                        key-field ="Id">
+                </lightning-datatable>
+       
+
+    <span slot= "footer">
+        <span class = "slds-p-right-x-small">
+            <lightning-button label="Reject"
+                            disabled={noRowsSelected}
+                            variant="destructive"
+                            data-status="Rejected"
+                            onclick={approveOrRejectTimesheets}>
+            </lightning-button>
+        </span>
+        <lightning-button label="Approve"
+                        variant="success"
+                        disabled={noRowsSelected}
+                        data-status="Approved"
+                        onclick={approveOrRejectTimesheets}>
+            </lightning-button>
+    </span>
+    </c-modal>
+</template> 
+

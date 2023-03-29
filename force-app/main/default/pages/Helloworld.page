@@ -1,0 +1,15 @@
+<apex:page standardController="Timesheet__c" extensions="HelloWorldController"> 
+    
+<h1>{!content}</h1> 
+
+
+<div>
+<p>{!Timesheet__c.Employee__r.Name} </p>
+<p>{!Timesheet__c.Hours__c}</p>
+<p>{!Timesheet__c.Status__c} </p>
+
+</div>
+
+
+
+</apex:page>
